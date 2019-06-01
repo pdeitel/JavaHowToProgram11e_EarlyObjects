@@ -1,0 +1,11 @@
+This chapter introduces Java application programming 
+We begin with examples of programs that display output 
+messages on the screen We then present a program that
+obtains inputs two numbers from a user calculates 
+their sum and displays the result You'll learn how to 
+instruct the computer to perform arithmetic calculations 
+and save their results for later use The last example 
+demonstrates how to make decisions The application 
+compares two numbers then displays messages that show 
+the comparison results You'll use the JDK commandline 
+tools to compile and run this chapter's programs 

@@ -1,0 +1,52 @@
+/* BasicShapes.css */
+/* CSS that styles various two-dimensional shapes */
+
+Line, Rectangle, Circle, Ellipse, Arc {
+    -fx-stroke-width: 10;  
+}
+
+#line1 {
+    -fx-stroke: red;
+}
+
+#line2 {
+    -fx-stroke: rgba(0%, 50%, 0%, 0.5);
+    -fx-stroke-line-cap: round;
+}
+
+Rectangle {
+   -fx-stroke: red;
+   -fx-arc-width: 50;
+   -fx-arc-height: 50;
+   -fx-fill: yellow;
+}
+
+Circle {
+   -fx-stroke: blue;
+   -fx-fill: radial-gradient(center 50% 50%, radius 60%, white, red);
+}
+
+Ellipse {
+   -fx-stroke: green;
+   -fx-fill: image-pattern("yellowflowers.png");
+}
+
+Arc {
+   -fx-stroke: purple;
+   -fx-fill: linear-gradient(to right, cyan, white);
+}
+
+/*************************************************************************
+* (C) Copyright 1992-2017 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+*************************************************************************/

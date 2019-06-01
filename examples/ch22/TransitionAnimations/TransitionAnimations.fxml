@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TransitionAnimations.fxml -->
+<!-- FXML for a Rectangle and Button -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane id="Pane" prefHeight="200.0" prefWidth="180.0" 
+   stylesheets="@TransitionAnimations.css" 
+   xmlns="http://javafx.com/javafx/8.0.60" 
+   xmlns:fx="http://javafx.com/fxml/1" 
+   fx:controller="TransitionAnimationsController">
+   <children>
+      <Rectangle fx:id="rectangle" height="90.0" layoutX="45.0" 
+         layoutY="45.0" width="90.0" />
+      <Button fx:id="startButton" layoutX="38.0" layoutY="161.0" 
+         mnemonicParsing="false" 
+         onAction="#startButtonPressed" text="Start Animations" />
+   </children>
+</Pane>
+
+
+<!--
+**************************************************************************
+* (C) Copyright 1992-2017 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+**************************************************************************
+-->

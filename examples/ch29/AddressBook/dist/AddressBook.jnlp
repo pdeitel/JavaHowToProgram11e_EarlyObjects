@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AddressBook.jnlp">
+  <information>
+    <title>AddressBook</title>
+    <vendor>PaulDeitel</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AddressBook.jar" size="8360" download="eager" />
+    <jar href="lib\derby.jar" size="3104883" download="eager" />
+    <jar href="lib\derbyclient.jar" size="585704" download="eager" />
+    <jar href="lib\derbynet.jar" size="266471" download="eager" />
+    <jar href="lib\eclipselink.jar" size="8478776" download="eager" />
+    <jar href="lib\javax.persistence_2.1.0.v201304241213.jar" size="164637" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" size="1366247" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AddressBook" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.deitel.jhtp.jpa.AddressBook"  name="AddressBook" />
+  <update check="always"/>
+</jnlp>

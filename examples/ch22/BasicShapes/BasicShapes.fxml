@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BasicShapes.fxml -->
+<!-- Defining Shape objects and styling via CSS -->
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<Pane id="Pane" prefHeight="110.0" prefWidth="630.0"
+   stylesheets="@BasicShapes.css" xmlns="http://javafx.com/javafx/8.0.60" 
+   xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line fx:id="line1" endX="100.0" endY="100.0" 
+	     startX="10.0" startY="10.0" />
+      <Line fx:id="line2" endX="10.0" endY="100.0" 
+	     startX="100.0" startY="10.0" />
+      <Rectangle fx:id="rectangle" height="90.0" layoutX="120.0" 
+	     layoutY="10.0" width="90.0" />
+      <Circle fx:id="circle" centerX="270.0" centerY="55.0" 
+	     radius="45.0" />
+      <Ellipse fx:id="ellipse" centerX="430.0" centerY="55.0" 
+	     radiusX="100.0" radiusY="45.0" />
+      <Arc fx:id="arc" centerX="590.0" centerY="55.0" length="270.0" 
+	     radiusX="45.0" radiusY="45.0" startAngle="45.0" type="ROUND" />
+   </children>
+</Pane>
+
+<!--
+**************************************************************************
+* (C) Copyright 1992-2017 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+**************************************************************************
+-->

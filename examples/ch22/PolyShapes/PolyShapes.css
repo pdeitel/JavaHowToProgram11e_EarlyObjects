@@ -1,0 +1,10 @@
+/* PolyShapes.css */
+/* sets the stroke and fill for this app's shapes */
+Polyline, Polygon, Path {
+    -fx-stroke: black;  
+    -fx-stroke-width: 5;  
+    -fx-fill: red;
+}
+
+
+

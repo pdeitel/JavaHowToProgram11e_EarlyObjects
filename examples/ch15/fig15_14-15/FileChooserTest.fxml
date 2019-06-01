@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FileChooserTestController">
+   <center>
+      <TextArea fx:id="textArea" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Select file or directory" wrapText="true" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+            <Button fx:id="selectFileButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#selectFileButtonPressed" text="Select File" />
+          <Button fx:id="selectDirectoryButton" mnemonicParsing="false" onAction="#selectDirectoryButtonPressed" text="Select Directory" />
+        </items>
+      </ToolBar>
+   </top>
+</BorderPane>

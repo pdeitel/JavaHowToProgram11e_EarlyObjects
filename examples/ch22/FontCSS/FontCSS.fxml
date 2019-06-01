@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- FontCSS.fxml -->
+<!-- FontCSS GUI that is styled via external CSS -->
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox styleClass="vbox" stylesheets="@FontCSS.css" 
+   xmlns="http://javafx.com/javafx/8.0.60" 
+   xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="label1" text="Arial 14pt bold" />
+      <Label fx:id="label2" text="Times New Roman 16pt plain" />
+      <Label fx:id="label3" text="Courier New 16pt bold and italic" />
+      <Label fx:id="label4" text="Default font 14pt with underline" />
+      <Label fx:id="label5" text="Default font 14pt with strikethrough" />
+   </children>
+</VBox>
+
+<!--
+**************************************************************************
+* (C) Copyright 1992-2017 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+**************************************************************************
+-->

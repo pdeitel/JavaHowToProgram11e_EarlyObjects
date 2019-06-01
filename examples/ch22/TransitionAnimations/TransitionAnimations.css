@@ -1,0 +1,10 @@
+Rectangle {
+   -fx-stroke-width: 10;  
+   -fx-stroke: red;
+   -fx-arc-width: 50;
+   -fx-arc-height: 50;
+   -fx-fill: yellow;
+}
+
+
+
