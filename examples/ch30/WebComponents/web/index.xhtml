@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!-- index.xhtml -->
+<!-- Registration form that demonstrates various JSF components -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+   <h:head>
+      <title>Sample Registration Form</title>
+   </h:head>
+   <h:body>
+      <h:form>
+         <h1>Registration Form</h1>
+         <p>Please fill in all fields and click Register</p>
+         <h:panelGrid columns="4" style="height: 96px; width:456px;">
+            <h:graphicImage name="fname.png" library="images"/>
+            <h:inputText id="firstNameInputText"/>
+            <h:graphicImage name="lname.png" library="images"/>
+            <h:inputText id="lastNameInputText"/>
+            <h:graphicImage name="email.png" library="images"/>
+            <h:inputText id="emailInputText"/>
+            <h:graphicImage name="phone.png" library="images"/>
+            <h:inputText id="phoneInputText"/>
+         </h:panelGrid>
+         <p><h:graphicImage name="publications.png" library="images"/>
+            <br/>Which book would you like information about?</p>
+         <h:selectOneMenu id="booksSelectOneMenu">
+            <f:selectItem itemValue="CHTP"
+               itemLabel="C How to Program" />
+            <f:selectItem itemValue="CPPHTP"
+               itemLabel="C++ How to Program" />
+            <f:selectItem itemValue="IW3HTP"
+               itemLabel="Internet &amp; World Wide Web How to Program" />
+            <f:selectItem itemValue="JHTP"
+               itemLabel="Java How to Program" />
+            <f:selectItem itemValue="VBHTP"
+               itemLabel="Visual Basic How to Program" />
+            <f:selectItem itemValue="VCSHTP"
+               itemLabel="Visual C# How to Program" />
+         </h:selectOneMenu>
+         <p><h:outputLink value="http://www.deitel.com">
+            Click here to learn more about our books
+         </h:outputLink></p>
+         <h:graphicImage name="os.png" library="images"/>
+         <h:selectOneRadio id="osSelectOneRadio">
+            <f:selectItem itemValue="WinVista" itemLabel="Windows Vista"/>
+            <f:selectItem itemValue="Win7" itemLabel="Windows 7"/>
+            <f:selectItem itemValue="OSX" itemLabel="Mac OS X"/>
+            <f:selectItem itemValue="Linux" itemLabel="Linux"/>
+            <f:selectItem itemValue="Other" itemLabel="Other"/>
+         </h:selectOneRadio>
+         <h:commandButton value="Register"/>
+      </h:form>
+   </h:body>
+</html>
+
+<!--
+**********************************************************************
+* (C) Copyright 1992-2014 by Deitel & Associates, Inc. and           *
+* Pearson Education, Inc. All Rights Reserved.                       *
+*                                                                    *
+* DISCLAIMER: The authors and publisher of this book have used their *
+* best efforts in preparing the book. These efforts include the      *
+* development, research, and testing of the theories and programs    *
+* to determine their effectiveness. The authors and publisher make   *
+* no warranty of any kind, expressed or implied, with regard to      *
+* these programs or to the documentation contained in these books.   *
+* The authors and publisher shall not be liable in any event for     *
+* incidental or consequential damages in connection with, or         *
+* arising out of, the furnishing, performance, or use of these       *
+* programs.                                                          *
+**********************************************************************
+-->
+

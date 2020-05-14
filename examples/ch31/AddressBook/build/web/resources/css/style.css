@@ -1,0 +1,31 @@
+/* error message style */
+.error { 
+   color:red;
+}
+
+/* column header style */
+.header
+{ 
+   background-color: steelblue;
+   color: white;
+   text-align: left;
+}
+
+/* row styles */
+.oddRows
+{
+   padding-left: 5px;
+   background-color: lightcyan;
+}
+.evenRows
+{
+   padding-left: 5px;
+   background-color: lightskyblue;
+}
+
+/* table style */
+.table
+{
+   width: 750px;
+}
+

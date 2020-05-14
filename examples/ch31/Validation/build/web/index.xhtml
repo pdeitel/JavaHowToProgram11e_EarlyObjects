@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<!-- index.xhtml -->
+<!-- Validating user input -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:f="http://java.sun.com/jsf/core">
+   <h:head>
+      <title>Validating Form Data</title>
+      <h:outputStylesheet name="style.css" library="css"/>
+   </h:head>
+   <h:body>
+      <h:form>
+         <h1>Please fill out the following form:</h1>
+         <p>All fields are required and must contain valid information</p>
+         <h:panelGrid columns="3">
+            <h:outputText value="Name:"/>
+            <h:inputText id="nameInputText" required="true"
+               requiredMessage="Please enter your name"
+               value="#{validationBean.name}"
+               validatorMessage="Name must be fewer than 30 characters">
+               <f:validateLength maximum="30" />
+            </h:inputText>
+            <h:message id="nameMessage" for="nameInputText" 
+               styleClass="error"/>
+            <h:outputText value="E-mail:"/>
+            <h:inputText id="emailInputText" required="true"
+               requiredMessage="Please enter a valid e-mail address"
+               value="#{validationBean.email}"
+               validatorMessage="Invalid e-mail address format">
+               <f:validateRegex pattern=
+                  "\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+            </h:inputText>
+            <h:message id="emailMessage" for="emailInputText" 
+               styleClass="error"/>
+            <h:outputText value="Phone:"/>
+            <h:inputText id="phoneInputText" required="true"
+               requiredMessage="Please enter a valid phone number"
+               value="#{validationBean.phone}"
+               validatorMessage="Invalid phone number format">
+               <f:validateRegex pattern=
+                  "((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" />
+            </h:inputText>
+            <h:message id="phoneMessage" for="phoneInputText" 
+               styleClass="error"/>
+         </h:panelGrid>
+         <h:commandButton value="Submit">
+            <f:ajax execute="nameInputText emailInputText phoneInputText"
+               render=
+               "nameMessage emailMessage phoneMessage resultOutputText"/>
+         </h:commandButton>
+         <h:outputText id="resultOutputText" escape="false"
+            value="#{validationBean.result}"/>
+      </h:form>
+   </h:body>
+</html>
+
+<!--
+**********************************************************************
+* (C) Copyright 1992-2014 by Deitel & Associates, Inc. and           *
+* Pearson Education, Inc. All Rights Reserved.                       *
+*                                                                    *
+* DISCLAIMER: The authors and publisher of this book have used their *
+* best efforts in preparing the book. These efforts include the      *
+* development, research, and testing of the theories and programs    *
+* to determine their effectiveness. The authors and publisher make   *
+* no warranty of any kind, expressed or implied, with regard to      *
+* these programs or to the documentation contained in these books.   *
+* The authors and publisher shall not be liable in any event for     *
+* incidental or consequential damages in connection with, or         *
+* arising out of, the furnishing, performance, or use of these       *
+* programs.                                                          *
+**********************************************************************
+-->
+
