@@ -32,7 +32,7 @@ public class ImageTextCell extends ListCell<Book> {
    @Override 
    protected void updateItem(Book item, boolean empty) {
       // required to ensure that cell displays properly
-      super.updateItem(item, empty)
+      super.updateItem(item, empty);
 
       if (empty || item == null) {
          setGraphic(null); // don't display anything

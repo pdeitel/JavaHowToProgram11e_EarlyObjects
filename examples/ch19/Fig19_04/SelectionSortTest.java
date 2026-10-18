@@ -47,7 +47,7 @@ public class SelectionSortTest {
 
       System.out.printf("%n               "); // for alignment
 
-      // indicate amount of array that’s sorted
+      // indicate amount of array that's sorted
       for (int j = 0; j < pass; j++) {
          System.out.print("--  ");
       }
